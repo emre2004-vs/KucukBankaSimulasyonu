@@ -1,0 +1,28 @@
+﻿<Page x:Class="KucukBankaSimulasyonu.UI.Views.TransferView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Transfer">
+
+    <Grid Margin="20">
+        <StackPanel Width="300">
+
+            <TextBlock Text="Para Transferi"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Margin="0,0,0,20"/>
+
+            <TextBlock Text="Alıcı Hesap No"/>
+            <TextBox x:Name="TxtAlici"
+                     Height="30"/>
+
+            <TextBlock Text="Tutar" Margin="0,10,0,0"/>
+            <TextBox x:Name="TxtTutar"
+                     Height="30"/>
+
+            <Button Content="Transfer Yap"
+                    Height="35"
+                    Margin="0,20,0,0"
+                    Click="TransferYap_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

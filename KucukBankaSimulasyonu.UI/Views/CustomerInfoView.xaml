@@ -1,0 +1,25 @@
+﻿<Page x:Class="KucukBankaSimulasyonu.UI.Views.CustomerInfoView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#F3F4F6">
+
+    <Grid Margin="30">
+        <Border Style="{StaticResource InfoCard}">
+            <StackPanel>
+
+                <TextBlock Text="👤 Müşteri Bilgileri"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Margin="0,0,0,20"/>
+
+                <TextBlock x:Name="TxtAdSoyad" FontSize="16"/>
+                <TextBlock x:Name="TxtMusteriId" FontSize="16"/>
+                <TextBlock x:Name="TxtMusteriTipi" FontSize="16"/>
+                <TextBlock x:Name="TxtHesapNo" FontSize="16"/>
+                <TextBlock x:Name="TxtBakiye" FontSize="16"/>
+                <TextBlock x:Name="TxtVergiNo" FontSize="16"/>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

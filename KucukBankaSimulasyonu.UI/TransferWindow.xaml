@@ -1,0 +1,32 @@
+﻿<Window x:Class="KucukBankaSimulasyonu.UI.TransferWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hesaplar Arası Transfer"
+        Height="350"
+        Width="450"
+        WindowStartupLocation="CenterOwner">
+
+    <StackPanel Margin="20">
+
+        <TextBlock Text="Gönderilecek Hesap No"
+                   FontSize="14"/>
+
+        <TextBox x:Name="TxtHedefHesap"
+                 Height="35"
+                 Margin="0,5,0,15"/>
+
+        <TextBlock Text="Transfer Tutarı"
+                   FontSize="14"/>
+
+        <TextBox x:Name="TxtTutar"
+                 Height="35"
+                 Margin="0,5,0,20"/>
+
+        <Button Content="Transferi Gerçekleştir"
+                Height="40"
+                Background="#0D9488"
+                Foreground="White"
+                FontSize="16"
+                Click="Transfer_Click"/>
+    </StackPanel>
+</Window>
